@@ -21,46 +21,27 @@ var expressao = (5 - 2) && (5 - ' ') && (5 - 2);
 console.log(expressao);
 
 // Verifique se as seguintes variáveis são Truthy ou Falsy
+
 var nome = 'Andre';
-if(nome){
-  console.log('True')
-}else{
-  console.log('False')
-}
-
 var idade = 28;
-if(idade){
-  console.log('True')
-}else{
-  console.log('False')
-}
-
 var possuiDoutorado = false;
-if(possuiDoutorado){
-  console.log('True')
-}else{
-  console.log('False')
-}
-
 var empregoFuturo;
-if(empregoFuturo){
-  console.log('True')
-}else{
-  console.log('False')
-}
-
 var dinheiroNaConta = 0;
-if(dinheiroNaConta){
-  console.log('True')
-}else{
-  console.log('False')
-}
+console.log(!!nome, !!idade, !!possuiDoutorado, !!empregoFuturo, !!dinheiroNaConta);
+
 
 // Compare o total de habitantes do Brasil com China (valor em milhões)
 var brasil = 207;
 var china = 1340;
 
+if(china>brasil){
+  console.log('A China é maior que o Brasil.')
+}else{
+  console.log('O Brasil é maior que a China.')
+}
+
 // O que irá aparecer no console?
+// false pois a 1º expressão ja retorna false
 if(('Gato' === 'gato') && (5 > 2)) {
   console.log('Verdadeiro');
 } else {
